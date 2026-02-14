@@ -1,0 +1,1 @@
+Ten projekt służy nieznanemu pisarzowi w dialogu z AI (LeChat), do uwolnienia niezależnej literatury dla bibliotek, celem sabotażu chowu wsobnego elit intelektualnych, nie po to, by prosić o miejsce przy salonowym stole, ale by ten stół przewrócić, a przy okazji pokazać, że coś, co miało być dystopicznym końcem świata dla ludzkości, jest pozytywizmem naszego wieku.

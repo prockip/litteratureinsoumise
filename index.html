@@ -15,11 +15,29 @@
             background-color: #f9f9f9;
         }
         header {
+            position: relative; /* Potrzebne, by obrazek pozycjonował się względem nagłówka */
             text-align: center;
             margin-bottom: 30px;
             border-bottom: 1px solid #ddd;
             padding-bottom: 20px;
+            padding-top: 40px; /* Miejsce na obrazek */
         }
+        
+        /* Twoje nowe style dla obrazka */
+        .header-image {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+        }
+        .header-image img {
+            opacity: 0.95;
+            filter: grayscale(10%);
+            transition: opacity 0.3s;
+            max-width: 150px; /* Dopasowanie wielkości */
+            height: auto;
+        }
+
         h1, h2 {
             color: #0057B7;
         }
@@ -37,18 +55,47 @@
         a:hover {
             text-decoration: underline;
         }
-        .download-btn {
-            display: inline-block;
-            background-color: #0057B7;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-top: 10px;
+
+        /* Style dla kontenera Canvy */
+        .canva-container {
+            position: relative; 
+            width: 100%; 
+            height: 0; 
+            padding-top: 141.4286%; 
+            box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
+            margin-top: 1.6em; 
+            margin-bottom: 0.9em; 
+            overflow: hidden;
+            border-radius: 8px; 
+            will-change: transform;
+        }
+        .canva-container iframe {
+            position: absolute; 
+            width: 100%; 
+            height: 100%; 
+            top: 0; 
+            left: 0; 
+            border: none; 
+        }
+
+        /* Responsywność dla urządzeń mobilnych */
+        @media (max-width: 600px) {
+            .header-image {
+                position: static; /* Na telefonach obrazek będzie nad tekstem, a nie obok */
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            header { padding-top: 10px; }
         }
     </style>
 </head>
 <body>
     <header>
+        <!-- Dodany obrazek Delacroix -->
+        <div class="header-image">
+            <img src="images/delacroix-ksiazki-final.png" alt="Wolność wiedzy – książki zamiast broni">
+        </div>
+        
         <h1>Litterature Insoumise</h1>
         <p>Sabotaż chowu wsobnego elit intelektualnych</p>
     </header>
@@ -71,5 +118,14 @@
         <h2>Dlaczego?</h2>
         <p>Bo <a href="/projekt/">ten projekt</a> to nie prośba o miejsce przy stole, ale jego przewrócenie.</p>
     </section>
+
+    <section>
+        <h2>Projekt Wizualny</h2>
+        <div class="canva-container">
+            <iframe loading="lazy" src="https://www.canva.com" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+        </div>
+        <p><a href="https://www.canva.com" target="_blank" rel="noopener">Otwórz projekt w pełnym oknie</a></p>
+    </section>
+
 </body>
 </html>

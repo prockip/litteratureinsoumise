@@ -9,7 +9,7 @@
 ## How to support?
 - Read and comment on articles.
 - [Financial support](link-do-darowizn) (donation link coming soon).
-- [Share your ideas in Issues](https://github.com/issues/created?issue=prockip%7Clitteratureinsoumise%7C2).
+- [Share your ideas in Issues](https://github.com/prockip/litteratureinsoumise/issues/2#issue-3977838642)
 
 ## Why GitHub?
 Because literature can be open-source too.

@@ -13,3 +13,6 @@
 
 ## Why GitHub?
 Because literature can be open-source too.
+## 🗣️ Join the discussion
+🔗 **[How can we hack literature together?](https://github.com/prockip/litteratureinsoumise/discussions/1)** –
+*How to turn GitHub into a tool of literary sabotage?*

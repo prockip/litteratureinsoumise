@@ -81,14 +81,28 @@
     </script>
 </head>
 <body>
-    <div style="background: #f9f9f9; text-align: center; padding: 8px; font-size: 12px; color: #666; border-bottom: 1px solid #ddd;">
-    This page is in Polish. Translate it to English with Google or use your browser's built-in tool.
+     <div style="
+      background: #f9f9f9;
+      text-align: center;
+      padding: 8px;
+      font-size: 12px;
+      color: #666;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+      z-index: 1;
+  ">
+    This page is in Polish. You can translate it using your browser’s built-in translation feature.
     <br>
-    <small><a href="https://litteratureinsoumise-art.translate.goog/?_x_tr_sl=pl&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp" target="_blank" style="color: #0057B7;">How to translate this page?</a></small>
+    <small>
+      <strong>Chrome:</strong> Right-click → "Translate to English"<br>
+      <strong>Firefox/Edge:</strong> Address bar → Translation icon
+    </small>
   </div>
-    <div class="header-image">
-        <img src="images/delacroix-ksiazki-final.png" alt="Wolność wiedzy – książki zamiast broni" width="180">
-    </div>
+
+  <!-- Obrazek Delacroix (z wyższym z-index) -->
+  <div class="header-image" style="position: absolute; z-index: 10;">
+    <img src="images/delacroix-ksiazki-final.png" alt="Wolność wiedzy – książki zamiast broni" width="180">
+  </div>
 
     <header>
         <h1>Litterature Insoumise</h1>

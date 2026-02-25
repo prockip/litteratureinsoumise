@@ -8,7 +8,7 @@
 
 ## How to support?
 - Read and comment on articles.
-- [Financial support](link-do-darowizn) (donation link coming soon).
+- [Financial support](https://suppi.pl/li)
 - [Share your ideas in Issues](https://github.com/prockip/litteratureinsoumise/issues/2#issue-3977838642)
 
 ## Why GitHub?

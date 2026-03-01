@@ -96,3 +96,29 @@ a:hover {
         border-bottom: 1px solid #333;
     }
 }
+
+/* Specyficzne style dla podstron z książkami */
+.signature {
+    margin-top: 40px;
+    font-style: italic;
+    text-align: right;
+    color: #777;
+    border-top: 1px dashed #dcdcdc;
+    padding-top: 10px;
+}
+
+strong {
+    color: #000; /* Mocne wyróżnienie ważnych myśli */
+}
+
+h3 {
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 25px;
+}
+
+#download-count {
+    font-weight: bold;
+    color: #0057B7;
+}
+

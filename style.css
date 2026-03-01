@@ -1,0 +1,98 @@
+/* Plik stylów dla Litterature Insoumise */
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #444;
+    background-color: #f1f1ed;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+h1, h2 {
+    color: #004694;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+a {
+    color: #0057B7;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #003d82;
+    text-decoration: none;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #0057B7;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    opacity: 0.8;
+    cursor: default;
+}
+
+.header-image {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 10;
+}
+
+.header-image img {
+    width: 180px;
+    opacity: 0.95;
+    filter: grayscale(10%);
+    transition: opacity 0.3s;
+}
+
+.info-bar {
+    background: #f1f1ed;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    color: #666;
+    border-bottom: 1px solid #dcdcdc;
+    position: relative;
+    z-index: 1;
+    line-height: 1.4;
+}
+
+/* OPCJONALNY DARK MODE - aktywuje się automatycznie */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #ccc;
+    }
+    section {
+        background-color: #242424;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    h1, h2 {
+        color: #5da9ff;
+    }
+    .info-bar {
+        background: #1a1a1a;
+        border-bottom: 1px solid #333;
+    }
+}

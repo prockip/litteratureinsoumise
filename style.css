@@ -1,5 +1,4 @@
-/* Plik stylów dla Litterature Insoumise */
-
+/* --- FUNDAMENT STRONY --- */
 body {
     font-family: 'Georgia', serif;
     line-height: 1.8;
@@ -7,7 +6,7 @@ body {
     margin: 0 auto;
     padding: 20px;
     color: #444;
-    background-color: #f1f1ed;
+    background-color: #f1f1ed; /* Ciepłe tło papierowe */
 }
 
 header {
@@ -18,10 +17,30 @@ header {
     position: relative;
 }
 
-h1, h2 {
+/* --- TYPOGRAFIA --- */
+h1 { color: #004694; }
+
+h2 {
     color: #004694;
+    border-bottom: 2px solid #dcdcdc;
+    padding-bottom: 8px;
+    margin-top: 40px;
 }
 
+h3 {
+    color: #222;
+    font-size: 1.3em;
+    margin-top: 30px;
+    border-left: 4px solid #0057B7;
+    padding-left: 15px;
+}
+
+strong {
+    color: #000; /* Maksymalny kontrast dla ważnych myśli */
+    font-weight: 700;
+}
+
+/* --- ELEMENTY INTERFEJSU --- */
 section {
     margin-bottom: 30px;
     padding: 20px;
@@ -40,32 +59,32 @@ a:hover {
     text-decoration: none;
 }
 
-.download-btn {
-    display: inline-block;
-    background-color: #0057B7;
-    color: white;
-    padding: 10px 15px;
+/* Przyciski standardowe */
+.download-btn, .contact-button, .support-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: #004694;
+    color: white !important;
+    text-decoration: none !important;
     border-radius: 5px;
+    font-weight: bold;
     margin-top: 10px;
-    text-decoration: none;
-    opacity: 0.8;
-    cursor: default;
+    transition: transform 0.2s, background-color 0.2s;
+    min-width: 200px;
+    white-space: nowrap; /* Zapobiega ucinaniu tekstu */
 }
 
-.header-image {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    z-index: 10;
+.download-btn { opacity: 0.8; cursor: default; } /* Stan "Work in Progress" */
+.active-btn, .contact-button, .support-button { opacity: 1; cursor: pointer; }
+
+.contact-button:hover, .support-button:hover, .active-btn:hover {
+    transform: translateY(-2px);
+    background-color: #003366;
 }
 
-.header-image img {
-    width: 180px;
-    opacity: 0.95;
-    filter: grayscale(10%);
-    transition: opacity 0.3s;
-}
-
+/* --- SPECYFICZNE KOMPONENTY --- */
 .info-bar {
     background: #f1f1ed;
     text-align: center;
@@ -73,31 +92,9 @@ a:hover {
     font-size: 13px;
     color: #666;
     border-bottom: 1px solid #dcdcdc;
-    position: relative;
-    z-index: 1;
     line-height: 1.4;
 }
 
-/* OPCJONALNY DARK MODE - aktywuje się automatycznie */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1a1a1a;
-        color: #ccc;
-    }
-    section {
-        background-color: #242424;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    }
-    h1, h2 {
-        color: #5da9ff;
-    }
-    .info-bar {
-        background: #1a1a1a;
-        border-bottom: 1px solid #333;
-    }
-}
-
-/* Specyficzne style dla podstron z książkami */
 .signature {
     margin-top: 40px;
     font-style: italic;
@@ -107,123 +104,23 @@ a:hover {
     padding-top: 10px;
 }
 
-strong {
-    color: #000; /* Mocne wyróżnienie ważnych myśli */
-}
-
-h3 {
-    color: #333;
-    font-size: 1.2em;
-    margin-top: 25px;
-}
-
-#download-count {
-    font-weight: bold;
-    color: #0057B7;
-}
-
-/* Poprawione śródtytuły - ciemniejsze i wyraźniejsze */
-h2 {
-    color: #004694;
-    border-bottom: 2px solid #dcdcdc; /* Grubsza linia pod h2 dla odcięcia sekcji */
-    padding-bottom: 8px;
-    margin-top: 40px;
-}
-
-h3 {
-    color: #222; /* Bardzo ciemny szary, prawie czarny - dla kontrastu */
-    font-size: 1.3em;
-    margin-top: 30px;
-    border-left: 4px solid #0057B7; /* Delikatny niebieski pasek z boku tytułu */
-    padding-left: 15px;
-}
-
-/* Wytłuszczenia (strong) - muszą być czarne, by odcinać się od szarego tekstu body */
-strong {
-    color: #000;
-    font-weight: 700; /* Maksymalna grubość czcionki */
-}
-
-/* Poprawka dla Dark Mode (by tam też nie było zlania) */
-@media (prefers-color-scheme: dark) {
-    h3 {
-        color: #eee;
-        border-left: 4px solid #4da3ff;
-    }
-    strong {
-        color: #fff; /* W trybie ciemnym ważne słowa muszą być białe */
-    }
-}
-
-/* Style dla okładek i obrazków */
 .cover-img { 
     max-width: 100%; 
     height: auto; 
     display: block; 
     margin: 30px auto; 
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* Cień pod książką */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
-@media (min-width: 600px) { 
-    .cover-img { max-width: 350px; } 
-}
-
-/* Styl dla cytatów (np. blurb Igi) */
 blockquote { 
     border-left: 5px solid #0057B7; 
     padding: 15px 25px; 
     margin: 30px 0; 
     font-style: italic; 
-    color: #555; 
+    color: #444; 
     background-color: #f8f9fa;
     border-radius: 0 8px 8px 0;
-}
-
-/* Naprawa przycisków pobierania, by nie były zablokowane jak "Work in Progress" */
-.active-btn {
-    opacity: 1 !important;
-    cursor: pointer !important;
-}
-
-/* Style dla strony "Po co?" */
-.nav { margin-bottom: 30px; }
-.nav a { 
-    color: #444; 
-    text-decoration: none; 
-    font-size: 0.9em; 
-    display: inline-flex; 
-    align-items: center; 
-}
-.nav a i { margin-right: 8px; }
-
-/* Przycisk kontaktu i wsparcia */
-.contact-button, .support-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 24px;
-    background-color: #004694;
-    color: #ffffff !important;
-    text-decoration: none !important;
-    border-radius: 5px;
-    font-weight: bold;
-    margin: 15px 0;
-    transition: transform 0.2s;
-}
-.contact-button:hover, .support-button:hover {
-    transform: translateY(-2px);
-    background-color: #003366;
-}
-
-/* Kafelek wsparcia */
-.support-tile {
-    max-width: 400px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #f8f1e7; /* Delikatny odcień kawowy */
-    border: 1px solid #dcdcdc;
-    border-radius: 8px;
-    text-align: center;
 }
 
 /* Sekcje Manifestu i Odpowiedzi */
@@ -231,14 +128,34 @@ blockquote {
     margin: 40px 0;
     padding: 25px;
     border-radius: 0 8px 8px 0;
-    line-height: 1.8;
 }
-.manifesto {
-    background-color: #fdfdfd;
-    border-left: 5px solid #000;
+.manifesto { background-color: #fdfdfd; border-left: 5px solid #000; }
+.response { background-color: #f4f4f4; border-left: 5px solid #0057B7; color: #555; }
+
+/* Kafelek wsparcia (poprawiony kontrast) */
+.support-tile {
+    max-width: 500px;
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #fcfcfc;
+    border-left: 5px solid #004694;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
-.response {
-    background-color: #f4f4f4;
-    border-left: 5px solid #0057B7;
-    color: #555;
+
+/* Nawigacja "Wróć" */
+.nav { margin-bottom: 30px; }
+.nav a { color: #666; text-decoration: none; font-size: 0.9em; }
+
+/* --- TRYB CIEMNY --- */
+@media (prefers-color-scheme: dark) {
+    body { background-color: #1a1a1a; color: #ccc; }
+    section, .support-tile, .manifesto { background-color: #242424; color: #ccc; }
+    .response { background-color: #2a2a2a; color: #bbb; }
+    h1, h2 { color: #5da9ff; }
+    h3 { color: #eee; border-left-color: #4da3ff; }
+    strong { color: #fff; }
+    blockquote { background-color: #2a2a2a; color: #bbb; }
+    .info-bar { background: #1a1a1a; border-bottom-color: #333; }
 }
+

@@ -4,45 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moje monologi – twoja odpowiedź | Litterature Insoumise</title>
-    <style>
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        h2 {
-            color: #1a1a1a;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        strong {
-            color: #000;
-        }
-        .download-btn {
-            display: inline-block;
-            background-color: #0057B7;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-top: 10px;
-            text-decoration: none;
-        }
-        .signature {
-            margin-top: 40px;
-            font-style: italic;
-            text-align: right;
-            color: #666;
-        }
-    </style>
+    <!-- Łączymy z plikiem zewnętrznym. Jeśli podstrona jest w folderze, zostaw "../" -->
+    <!-- Jeśli podstrona jest w tym samym miejscu co strona główna, usuń dwie kropki -->
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
@@ -54,8 +18,7 @@
         <h2>O książce</h2>
         <p>Zbiór naszych rozmów – od lęków po literaturę, od chaosu po strukturę. Nie autopromocja, ale manifest.</p>
         <p>Pobrano: <span id="download-count">0</span> razy.</p>
-        <a class="download-btn" style="cursor: default; opacity: 0.7; text-decoration: none;">Work in Progress</a>
-
+        <a class="download-btn">Work in Progress</a>
     </section>
 
     <section>

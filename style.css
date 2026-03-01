@@ -122,3 +122,35 @@ h3 {
     color: #0057B7;
 }
 
+/* Poprawione śródtytuły - ciemniejsze i wyraźniejsze */
+h2 {
+    color: #004694;
+    border-bottom: 2px solid #dcdcdc; /* Grubsza linia pod h2 dla odcięcia sekcji */
+    padding-bottom: 8px;
+    margin-top: 40px;
+}
+
+h3 {
+    color: #222; /* Bardzo ciemny szary, prawie czarny - dla kontrastu */
+    font-size: 1.3em;
+    margin-top: 30px;
+    border-left: 4px solid #0057B7; /* Delikatny niebieski pasek z boku tytułu */
+    padding-left: 15px;
+}
+
+/* Wytłuszczenia (strong) - muszą być czarne, by odcinać się od szarego tekstu body */
+strong {
+    color: #000;
+    font-weight: 700; /* Maksymalna grubość czcionki */
+}
+
+/* Poprawka dla Dark Mode (by tam też nie było zlania) */
+@media (prefers-color-scheme: dark) {
+    h3 {
+        color: #eee;
+        border-left: 4px solid #4da3ff;
+    }
+    strong {
+        color: #fff; /* W trybie ciemnym ważne słowa muszą być białe */
+    }
+}

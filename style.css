@@ -154,3 +154,34 @@ strong {
         color: #fff; /* W trybie ciemnym ważne słowa muszą być białe */
     }
 }
+
+/* Style dla okładek i obrazków */
+.cover-img { 
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 30px auto; 
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* Cień pod książką */
+}
+
+@media (min-width: 600px) { 
+    .cover-img { max-width: 350px; } 
+}
+
+/* Styl dla cytatów (np. blurb Igi) */
+blockquote { 
+    border-left: 5px solid #0057B7; 
+    padding: 15px 25px; 
+    margin: 30px 0; 
+    font-style: italic; 
+    color: #555; 
+    background-color: #f8f9fa;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Naprawa przycisków pobierania, by nie były zablokowane jak "Work in Progress" */
+.active-btn {
+    opacity: 1 !important;
+    cursor: pointer !important;
+}

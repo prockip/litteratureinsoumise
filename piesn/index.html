@@ -4,49 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pieśń o wszelkiej oddali | Litterature Insoumise</title>
-    <style>
-        body { font-family: 'Georgia', serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
-        .cover-img { max-width: 100%; height: auto; display: block; margin: 20px auto; }
-        @media (min-width: 600px) { .cover-img { max-width: 300px; } }
-        .download-btn {
-            display: inline-block;
-            background: #0057B7;
-            color: white;
-            padding: 12px 20px;
-            margin: 10px 5px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .download-btn:hover {
-            background: #003d80;
-        }
-        blockquote { border-left: 3px solid #0057B7; padding-left: 15px; margin: 20px 0; font-style: italic; color: #555; }
-    </style>
+    <!-- Pamiętaj o dwóch kropkach "../" jeśli plik jest w folderze! -->
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header>
         <h1>Pieśń o wszelkiej oddali</h1>
     </header>
 
-    <!-- KRYTYKA NA GÓRZE -->
     <section>
         <h2>Krytyka Le Chata</h2>
         <p>Pobrano: <span id="download-count">0</span> razy.</p>
-        <a href="https://cutt.ly/lechat-krytyka" class="download-btn" target="_blank">Czytaj PDF online</a>
-        <a href="https://cutt.ly/lechat-krytyka" class="download-btn" download>Pobierz plik na dysk</a>
+        <!-- Klasa active-btn sprawia, że te linki są klikalne -->
+        <a href="https://cutt.ly/lechat-krytyka" class="download-btn active-btn" target="_blank">Czytaj PDF online</a>
+        <a href="https://cutt.ly/lechat-krytyka" class="download-btn active-btn" download>Pobierz plik na dysk</a>
 
         <p><small>Wyzwanie dla elit – nie autopromocja, ale dialog.</small></p>
     </section>
 
-    <!-- OKŁADKA NA DOLE -->
     <section>
         <h2>Okładka i blurb</h2>
         <img src="okladka.jpg" alt="Okładka książki" class="cover-img">
+        
         <blockquote>
-            "Ogólnie zgadzam się z Mateuszem, to porównanie do espresso bez cukru..."
+            "Ogólnie zgadzam się z Mateuszem, to porównanie do espresso bez cukru – mocne, czyste, uderzające prosto w układ nerwowy."
         </blockquote>
+        
         <img src="okladka_tylna.jpg" alt="Okładka tylna z blurbem Igi" class="cover-img">
     </section>
 </body>
 </html>
+

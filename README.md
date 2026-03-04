@@ -2,7 +2,7 @@
 **The Open Independent Literature Project** – a sabotage of inbreeding by intellectual elites.
 
 ## What will you find here?
-- [Pieśń o wszelkiej oddali](https://twoja-domena/piesn/) – book + criticism by Le Chat.
+- [Pieśń o wszelkiej oddali](https://twoja-domena/piesn/) – A Book Criticism by Le Chat and Claude.
 - [Moje monologi – twoja odpowiedź](https://twoja-domena/ksiazka/) – dialogues with AI.
 - [Po co?](https://twoja-domena/po-co/) – project manifesto.
 

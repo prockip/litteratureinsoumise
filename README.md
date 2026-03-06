@@ -4,25 +4,26 @@
 Autorski projekt literacki Pawła Prockiego. Próba przewrócenia stolika elit intelektualnych poprzez literaturę open-source i dialog z AI.
 
 ## 🚀 Live Project
-Witryna jest dostępna pod adresem: 
-👉 **[litteratureinsoumise.prockip.workers.dev](https://litteratureinsoumise.prockip.workers.dev)**
+Witryna jest dostępna pod oficjalnym adresem: 
+👉 **[https://litteratureinsoumise.art](https://litteratureinsoumise.art)**
 
-## 📚 What will you find here?
-- **[Pieśń o wszelkiej oddali](https://litteratureinsoumise.prockip.workers.devpiesn/)** – A book with criticism by Le Chat and Claude.
-- **[Moje monologi – twoja odpowiedź](https://litteratureinsoumise.prockip.workers.devksiazka/)** – Dialogues between a writer and AI.
-- **[Po co?](https://litteratureinsoumise.prockip.workers.devpo-co/)** – Project manifesto: why literature is not the property of elites.
+## 📚 Co znajdziesz w środku? (What will you find here?)
+- **[Pieśń o wszelkiej oddali](https://litteratureinsoumise.art)** – Książka z krytyką Le Chata i Claude'a.
+- **[Moje monologi – twoja odpowiedź](https://litteratureinsoumise.art)** – Dialogi pisarza z AI.
+- **[Po co?](https://litteratureinsoumise.art)** – Manifest projektu: dlaczego literatura nie jest własnością elit.
 
-## 🤝 How to support?
-- **Read and comment:** Każda interakcja ma znaczenie.
-- **Financial support:** [Wesprzyj projekt na suppi.pl](https://suppi.pl/li)
-- **Contribute:** Masz pomysł na sabotaż? [Share your ideas in Issues](https://github.com)
+## 🤝 Jak wesprzeć projekt? (How to support?)
+- **Czytaj i komentuj:** Każda interakcja ma znaczenie.
+- **Wsparcie finansowe:** [Wesprzyj projekt na suppi.pl](https://suppi.pl/li)
+- **Współpraca (Contribute):** Masz pomysł na sabotaż? [Otwórz dyskusję w Issues](https://github.com)
 
-## 🗣️ Join the discussion
-🔗 **[How can we hack literature together?](https://github.com/prockip/litteratureinsoumise/discussions/1)** 
+## 🗣️ Dołącz do dyskusji
+🔗 **[Jak możemy razem zhakować literaturę?](https://github.com/prockip/litteratureinsoumise/discussions/1)** 
 *How to turn GitHub into a tool of literary sabotage?*
 
 ---
 ## 🛠 Technical Setup
-- **Hosting:** Cloudflare Workers (Pages) & GitHub Pages
+- **Hosting:** Cloudflare Workers & GitHub (Docs engine)
 - **Root directory:** `/docs`
+- **Domain:** [litteratureinsoumise.art](https://litteratureinsoumise.art)
 - **Engine:** Pure HTML/CSS & AI-assisted dialogue

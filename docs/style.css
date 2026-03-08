@@ -16,8 +16,7 @@ header {
     padding-bottom: 20px;
     position: relative;
 }
-
-/* --- TYPOGRAFIA --- */
+/* --- TYPOGRAFIA (Zaktualizowana) --- */
 h1 { color: #004694; }
 
 h2 {
@@ -34,10 +33,22 @@ h3 {
     border-left: 4px solid #0057B7;
     padding-left: 15px;
 }
+/* Naprawa widoczności pogrubienia */
+strong, b {
+    color: #000; /* Głęboka czerń */
+    font-weight: 850; /* Maksymalne pogrubienie, by odróżnić od reszty tekstu */
+}
 
-strong {
-    color: #000; /* Maksymalny kontrast dla ważnych myśli */
-    font-weight: 700;
+/* Poprawa czytelności linków i podtytułów-odsyłaczy */
+a {
+    color: #0066cc; /* Jaśniejszy i żywszy niebieski niż poprzednio */
+    text-decoration: underline;
+    font-weight: 500; /* Lekko grubszy tekst linku, by nie niknął w treści */
+}
+
+a:hover {
+    color: #004694;
+    text-decoration: none;
 }
 
 /* --- ELEMENTY INTERFEJSU --- */

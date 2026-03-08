@@ -41,7 +41,7 @@ strong, b {
 
 /* Poprawa czytelności linków i podtytułów-odsyłaczy */
 a {
-    color: #0066cc; /* Jaśniejszy i żywszy niebieski niż poprzednio */
+    color: #007bff; /* Jaśniejszy i żywszy niebieski niż poprzednio */
     text-decoration: underline;
     font-weight: 500; /* Lekko grubszy tekst linku, by nie niknął w treści */
 }

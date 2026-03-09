@@ -1,0 +1,12 @@
+name: IndexNow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send to IndexNow
+        run: |
+          curl -X GET "https://bing.com"

@@ -17,14 +17,20 @@
     </header>
 
     <section>
-        <h2>krytyka_zbiorcza_Piesni</h2>
-        <p>Pobrano: <span id="download-count">0</span> razy.</p>
-        <!-- Klasa active-btn sprawia, że te linki są klikalne -->
-        <a href="https://cutt.ly/FtYo9o9x" class="download-btn active-btn" target="_blank">Czytaj PDF online</a>
-        <a href="https://cutt.ly/BtYoCiNm" class="download-btn active-btn" download>Pobierz plik na dysk</a>
+    <h2>krytyka_zbiorcza_Piesni</h2>
+    <p>Pobrano: <span id="download-count">...</span> razy.</p>
 
-        <p><small>Wyzwanie dla elit – nie autopromocja, ale dialog.</small></p>
-    </section>
+    <a href="https://docs.google.com/viewer?url=https://raw.githubusercontent.com/prockip/litteratureinsoumise/main/docs/piesn/krytyka_zbiorcza_Piesni.pdf&embedded=true" 
+       class="download-btn active-btn" 
+       target="_blank">Czytaj PDF online</a>
+
+    <a href="https://raw.githubusercontent.com/prockip/litteratureinsoumise/main/docs/piesn/krytyka_zbiorcza_Piesni.pdf" 
+       class="download-btn active-btn" 
+       onclick="countDownload()"
+       download>Pobierz plik na dysk</a>
+
+    <p><small>Wyzwanie dla elit – nie autopromocja, ale dialog.</small></p>
+</section>
 
     <section>
         <h2>Okładka i blurb</h2>
@@ -36,6 +42,35 @@
         
         <img src="okladka_tylna.jpg" alt="Okładka tylna z blurbem Igi" class="cover-img">
     </section>
+    <script>
+// Zmień 'twoja-strona-piesni' na unikalną nazwę Twojego projektu
+const namespace = "prockip-litterature";
+const key = "krytyka-piesni";
+
+// Funkcja, która pobiera aktualny stan licznika przy ładowaniu strony
+async function updateDisplay() {
+    try {
+        const response = await fetch(`https://api.countapi.xyz/get/${namespace}/${key}`);
+        const data = await response.json();
+        document.getElementById('download-count').innerText = data.value || 0;
+    } catch (error) {
+        document.getElementById('download-count').innerText = "kilka"; 
+    }
+}
+
+// Funkcja, która zwiększa licznik po kliknięciu
+async function countDownload() {
+    try {
+        await fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`);
+        updateDisplay(); // odśwież wynik na ekranie
+    } catch (error) {
+        console.log("Błąd licznika, ale plik się pobiera.");
+    }
+}
+
+// Uruchom pobieranie wyniku na starcie
+updateDisplay();
+</script>
 </body>
 </html>
 

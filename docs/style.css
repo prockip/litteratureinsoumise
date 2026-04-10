@@ -170,3 +170,12 @@ blockquote {
     .info-bar { background: #1a1a1a; border-bottom-color: #333; }
 }
 
+.author-link {
+    color: #007bff; /* Twój kolor niebieski - sprawdź czy pasuje do reszty strony */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.author-link:hover {
+    text-decoration: underline;
+}

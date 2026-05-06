@@ -123,6 +123,21 @@ a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
+/* --- OBRZEK W NAGŁÓWKU (responsywny) --- */
+.header-image img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+
+@media (max-width: 768px) {
+    .header-image img {
+        width: 100% !important; /* Pełna szerokość na telefonie */
+        float: none !important; /* Wyłącza opływanie tekstu */
+        margin: 0 auto 15px auto; /* Centruje obrazek i dodaje margines na dole */
+    }
+}
 
 blockquote { 
     border-left: 5px solid #0057B7; 

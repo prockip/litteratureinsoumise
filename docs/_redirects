@@ -1,1 +1,2 @@
-https://www.litteratureinsoumise.art/* https://litteratureinsoumise.art/:splat 301
+# Redirects for Cloudflare Workers Static Assets.
+# Domain-level www redirects should be configured in Cloudflare DNS/Redirect Rules.

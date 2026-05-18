@@ -5,3 +5,22 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), fullscreen=(self)
   X-Frame-Options: DENY
+  Cache-Control: public, max-age=300
+
+/*.css
+  Cache-Control: public, max-age=86400
+
+/*.jpg
+  Cache-Control: public, max-age=2592000, immutable
+
+/*.jpeg
+  Cache-Control: public, max-age=2592000, immutable
+
+/*.png
+  Cache-Control: public, max-age=2592000, immutable
+
+/*.PNG
+  Cache-Control: public, max-age=2592000, immutable
+
+/*.pdf
+  Cache-Control: public, max-age=2592000

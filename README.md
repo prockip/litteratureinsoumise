@@ -8,10 +8,9 @@ Witryna jest dostępna pod oficjalnym adresem:
 👉 **[https://litteratureinsoumise.art](https://litteratureinsoumise.art)**
 
 ## 📚 Co znajdziesz w środku? (What will you find here?)
-- **[Pieśń o wszelkiej oddali](https://litteratureinsoumise.art)** – Książka z krytyką Le Chata i Claude'a.
-- **[Moje monologi – twoja odpowiedź](https://litteratureinsoumise.art)** – Dialogi pisarza z AI.
-- **[Po co?](https://litteratureinsoumise.art)** – Manifest projektu: dlaczego literatura nie jest własnością elit.
-
+- **[Pieśń o wszelkiej oddali](https://litteratureinsoumise.art)** – Interstycium i Metodologia mapowania.
+- **[Moje monologi – twoja odpowiedź](https://litteratureinsoumise.art)** – Aktualne miniatury prozą.
+- **[Po co?](https://litteratureinsoumise.art)** – Dalsze stawianie pytania po co to wszystko.
 ## 🤝 Jak wesprzeć projekt? (How to support?)
 - **Czytaj i komentuj:** Każda interakcja ma znaczenie.
 - **Wsparcie finansowe:** [Wesprzyj projekt na suppi.pl](https://suppi.pl/li)

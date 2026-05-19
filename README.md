@@ -1,24 +1,13 @@
-# Littérature Insoumise 📖
-**The Open Independent Literature Project** – a sabotage of inbreeding by intellectual elites.
+# Litterature Insoumise
 
-Autorski projekt literacki Pawła Prockiego. Próba przewrócenia stolika elit intelektualnych poprzez literaturę udostępnianą publicznie i dialog z AI.
+Repozytorium zawiera pliki źródłowe projektu *Litterature Insoumise* 
 
-## 🚀 Live Project
-Witryna jest dostępna pod oficjalnym adresem: 
-👉 **[https://litteratureinsoumise.art](https://litteratureinsoumise.art)**
+---
+## Kontakt i współpraca
+Projekt jest autonomicznym warsztatem autorskim. Jeśli jednak chcesz o czymś podyskutować, jestem otwarty.
 
-## 📚 Co znajdziesz w środku? (What will you find here?)
-- **[Pieśń o wszelkiej oddali](https://litteratureinsoumise.art)** – Interstycium i Metodologia mapowania.
-- **[Moje monologi – twoja odpowiedź](https://litteratureinsoumise.art)** – Aktualne miniatury prozą.
-- **[Po co?](https://litteratureinsoumise.art)** – Dalsze stawianie pytania po co to wszystko.
-## 🤝 Jak wesprzeć projekt? (How to support?)
-- **Czytaj i komentuj:** Każda interakcja ma znaczenie.
-- **Wsparcie finansowe:** [Wesprzyj projekt na suppi.pl](https://suppi.pl/li)
-- **Współpraca (Contribute):** Masz pomysł na sabotaż? [Otwórz dyskusję w Issues](https://github.com/prockip/litteratureinsoumise/issues)
-
-## 🗣️ Dołącz do dyskusji
-🔗 **[Jak możemy razem zhakować literaturę?](https://github.com/prockip/litteratureinsoumise/discussions/1)** 
-*How to turn GitHub into a tool of literary sabotage?*
+*   **Strona główna:** [litteratureinsoumise.art](https://litteratureinsoumise.art)
+*   **Kontakt / Uwagi:** [Otwórz nowe zgłoszenie (Issue)](https://github.com/prockip/litteratureinsoumise/issues) lub napisz przez mail na stronie.
 
 ---
 ## Licencja

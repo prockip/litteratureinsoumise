@@ -6,7 +6,6 @@ Repozytorium zawiera pliki źródłowe projektu *Litterature Insoumise*
 ## Kontakt i współpraca
 Projekt jest autonomicznym warsztatem autorskim. Jeśli jednak chcesz o czymś podyskutować, jestem otwarty.
 
-*   **Strona główna:** [litteratureinsoumise.art](https://litteratureinsoumise.art)
 *   **Kontakt / Uwagi:** [Otwórz nowe zgłoszenie (Issue)](https://github.com/prockip/litteratureinsoumise/issues) lub napisz przez e-mail na stronie.
 
 ---

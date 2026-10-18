@@ -1,3 +1,5 @@
+@import url('https://googleapis.com');
+
 /* --- FUNDAMENT STRONY --- */
 * {
     box-sizing: border-box;
@@ -8,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Lora', 'Georgia', serif;
     line-height: 1.8;
     max-width: 800px;
     margin: 0 auto;
